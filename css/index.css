@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 375px;
+  padding: 30px;
+  margin: 30px auto;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-mobile.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.container header {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container header img:not(.mock img) {
+  width: 150px;
+}
+
+.container header .mock {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.container header .mock img {
+  max-width: 100%;
+}
+
+.container .cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .cont h1 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.container .cont p {
+  font-size: 2rm;
+  text-align: center;
+  margin: 30px 0;
+  color: rgba(227, 227, 227, 0.929);
+}
+
+.container .cont .button {
+    align-self: center;
+}
+.container .cont .button span {
+  border: none;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container .cont .icons {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.container .cont .icons i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 1200px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container header {
+        width: 45%;
+    }
+
+    .container header img:not(.mock img) {
+        margin: 20px 0;
+    }
+
+    .container .cont {
+        width: 45%;
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+
+    .container .cont h1 {
+        text-align: left;
+        font-size: 40px;
+    }
+    .container .cont p {
+        text-align: left;
+    }
+    .container .cont .button {
+        display: flex;
+        text-align: left;
+        align-self: flex-start;
+    }
+    .container .cont .button span  {
+        font-size: 20px;
+        width: 150px;
+        text-align: center;
+
+        align-self: flex-start;
+    }
+
+    .container .cont .icons {
+        width: 30%;
+        align-self: flex-end;
+    }
+}
